@@ -13,7 +13,7 @@ eureka:
 zuul:
   routes:
     discovery:
-      path: /discovery/**
+      serviceId: discovery
       sensitive-headers: Set-Cookie,Authorization
       url: http://localhost:8761
 
