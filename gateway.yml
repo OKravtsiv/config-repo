@@ -14,7 +14,7 @@ zuul:
   routes:
     discovery:
       serviceId: discovery
-      stripPrefix: true
+      prefixStripped: false
       sensitive-headers: Set-Cookie,Authorization
       url: http://localhost:8761
 
