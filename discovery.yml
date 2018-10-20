@@ -6,6 +6,8 @@ spring:
     name: discovery
  
 eureka:
+  dashboard:
+    path: /dashboard
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
