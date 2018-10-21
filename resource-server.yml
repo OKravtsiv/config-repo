@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: resource-server
+
+server:
+  port: 8084
+
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
