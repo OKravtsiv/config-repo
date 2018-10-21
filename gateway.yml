@@ -15,11 +15,10 @@ zuul:
     discovery:
       serviceId: discovery
       sensitive-headers: Set-Cookie,Authorization
-      
     resource-server:
       serviceId: resource-server
       sensitive-headers: Set-Cookie,Authorization
-      
+       
 hystrix:
   command:
     discovery:
