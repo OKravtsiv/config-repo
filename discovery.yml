@@ -1,7 +1,7 @@
 server:
   port: 8761
-  contextPath: /discovery
-    
+  servlet:
+    contextPath: /discovery
 
 spring:
   application:
