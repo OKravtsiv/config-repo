@@ -1,9 +1,10 @@
+server:
+  port: 8085
+  contextPath: /auth
+
 spring:
   application:
     name: auth
-
-server:
-  port: 8085
 
 eureka:
   client:

@@ -1,9 +1,10 @@
+server:
+  port: 8084
+  contextPath: /resource-server
+
 spring:
   application:
     name: resource-server
-
-server:
-  port: 8084
 
 eureka:
   client:

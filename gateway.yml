@@ -21,7 +21,7 @@ zuul:
       sensitive-headers: Set-Cookie,Authorization
       url: http://localhost:8084
     auth:
-      path: /authserver/**
+      path: /auth/**
       sensitive-headers: Set-Cookie,Authorization
       url: http://localhost:8085
        
