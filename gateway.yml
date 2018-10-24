@@ -20,10 +20,6 @@ zuul:
       path: /resource-server/**
       sensitive-headers: Set-Cookie,Authorization
       url: http://localhost:8084
-    auth:
-      path: /authserver/**
-      sensitive-headers: Set-Cookie,Authorization
-      url: http://localhost:8085
        
 hystrix:
   command:
