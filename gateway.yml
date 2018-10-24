@@ -20,6 +20,10 @@ zuul:
       path: /resource-server/**
       sensitive-headers: Set-Cookie,Authorization
       url: http://localhost:8084
+    authserver:
+      path: /authserver/**
+      sensitive-headers: Set-Cookie,Authorization
+      url: http://localhost:8085
        
 hystrix:
   command:
@@ -40,8 +44,8 @@ management:
 security:
   oauth2:
     client:
-      accessTokenUri: http://localhost:8085/a/oauth/token
-      userAuthorizationUri: http://localhost:8085/a/oauth/authorize
+      accessTokenUri: http://localhost:8085/oauth/token
+      userAuthorizationUri: http://localhost:8085/oauth/authorize
       clientId: authserver
       clientSecret: passwordforauthserver
     resource:
