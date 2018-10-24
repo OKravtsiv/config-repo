@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: auth
+    name: authserver
 
 eureka:
   client:
@@ -11,3 +11,9 @@ eureka:
     registryFetchIntervalSeconds: 5
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
